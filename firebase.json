@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "public": "dist/SocketCubeApp",
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
