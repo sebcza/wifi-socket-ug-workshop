@@ -1,12 +1,51 @@
 <mat-toolbar color="primary">Socket Cube v1.0</mat-toolbar>
- 
+
 <mat-card style="margin-top:10px;">
   <mat-card-header>
-    <mat-card-title>Lampa</mat-card-title>
-    <mat-card-subtitle>w salonie</mat-card-subtitle>
+    <mat-card-title>Wilgotność</mat-card-title>
   </mat-card-header>
-<div class="example-button-row">
-  <button (click)="turnOff()" mat-raised-button>OFF</button>
-  <button (click)="turnOn()" mat-raised-button color="primary">ON</button>
-</div> 
+  <div class="example-button-row">
+    <h3>{{humidity}} %</h3>
+  </div>
 </mat-card>
+
+<mat-card style="margin-top:10px;">
+  <mat-card-header>
+    <mat-card-title>Temperatura</mat-card-title>
+  </mat-card-header>
+  <div class="example-button-row">
+    <h3>{{temp}} C</h3>
+  </div>
+</mat-card>
+
+<mat-card style="margin-top:10px;">
+  <mat-card-header>
+    <mat-card-title>Wilgotność - sypialnia</mat-card-title>
+  </mat-card-header>
+  <div class="example-button-row">
+    <h3>{{humidity_sypialnia}} %</h3>
+  </div>
+</mat-card>
+
+<mat-card style="margin-top:10px;">
+  <mat-card-header>
+    <mat-card-title>Temperatura - sypialnia</mat-card-title>
+  </mat-card-header>
+  <div class="example-button-row">
+    <h3>{{temp_sypialnia}} C</h3>
+  </div>
+</mat-card>
+
+
+<!-- <mat-card style="margin-top:10px;">
+  <mat-card-header>
+    <mat-card-title>Temperatura</mat-card-title>
+  </mat-card-header>
+  <div class="example-button-row">
+    <ngx-charts-line-chart [view]="view" [scheme]="colorScheme" [results]="multi" [gradient]="gradient"
+      [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend" [showXAxisLabel]="showXAxisLabel"
+      [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel" [autoScale]="autoScale"
+      [timeline]="timeline" (select)="onSelect($event)">
+    </ngx-charts-line-chart>
+  </div>
+</mat-card> -->
